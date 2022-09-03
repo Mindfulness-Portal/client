@@ -22,8 +22,8 @@ const ArticlesComponent = ({ cat, filters, sort, number }) => {
       try {
         const res = await axios.get(
           cat
-            ? `http://localhost:5000/api/v1/article?category=${cat}`
-            : "http://localhost:5000/api/v1/article"
+            ? `https://mindfulness-portal.herokuapp.com/api/v1/article?category=${cat}`
+            : "https://mindfulness-portal.herokuapp.com/api/v1/article"
         );
         // console.log(res);
         setProducts(res.data);
