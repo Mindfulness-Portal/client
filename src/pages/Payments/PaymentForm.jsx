@@ -45,7 +45,7 @@ const PaymentForm = () => {
 
       // ... SEND to your API server to process payment intent
       const response = await fetch(
-        "http://localhost:5000/api/v1/checkout/create-payment-intent",
+        "https://mindfulness-portal.herokuapp.com/api/v1/checkout/create-payment-intent",
         {
           method: "POST",
           headers: {
@@ -78,7 +78,7 @@ const PaymentForm = () => {
       today.getDate();
     setDate(dateNew);
     try {
-      let response = await fetch(`http://localhost:5000/api/v1/checkout`, {
+      let response = await fetch(`https://mindfulness-portal.herokuapp.com/api/v1/checkout`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -104,7 +104,7 @@ const PaymentForm = () => {
   const createOrderDetails = async () => {
     cart.products.map(async (item) => {
       try {
-        let response = await fetch(`http://localhost:5000/api/v1/orders`, {
+        let response = await fetch(`https://mindfulness-portal.herokuapp.com/api/v1/orders`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -169,7 +169,7 @@ const Article = (props) => {
 
   const saveCartDetails = async () => {
     try {
-      let response = await fetch("http://localhost:5000/api/v1/carts", {
+      let response = await fetch("https://mindfulness-portal.herokuapp.com/api/v1/carts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

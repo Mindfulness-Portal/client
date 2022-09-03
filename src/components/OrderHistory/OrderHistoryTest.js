@@ -20,7 +20,7 @@ export default function OrderHistoryTest() {
   const currentDate = moment();
 
   const user = useSelector((state) => state.user.currentUser._id);
-  const URL = `http://localhost:5000/api/v1/orders/find/${user}`;
+  const URL = `https://mindfulness-portal.herokuapp.com/api/v1/orders/find/${user}`;
 
   // IP address of local machine - 192.168.8.187
   useEffect(() => {
@@ -75,9 +75,9 @@ export default function OrderHistoryTest() {
     // });
   };
 
-  // const URL = `http://localhost:5000/api/v1/carts/${cartId}`;
+  // const URL = `https://mindfulness-portal.herokuapp.com/api/v1/carts/${cartId}`;
 
-  const URl_Update = `http://localhost:5000/api/v1/orders/${cartId}`;
+  const URl_Update = `https://mindfulness-portal.herokuapp.com/api/v1/orders/${cartId}`;
 
   const updateConfirm = async () => {
     // console.log("Update");

@@ -36,7 +36,7 @@ export default function OrderHistoryComponent() {
   React.useEffect(() => {
     const cartData = async () => {
       try {
-        let response = await fetch("http://localhost:5000/api/v1/carts", {
+        let response = await fetch("https://mindfulness-portal.herokuapp.com/api/v1/carts", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

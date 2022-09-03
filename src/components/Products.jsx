@@ -23,8 +23,8 @@ const Products = ({ cat, filters, sort, number }) => {
       try {
         const res = await axios.get(
           cat
-            ? `http://localhost:5000/api/v1/products?category=${cat}`
-            : "http://localhost:5000/api/v1/products"
+            ? `https://mindfulness-portal.herokuapp.com/api/v1/products?category=${cat}`
+            : "https://mindfulness-portal.herokuapp.com/api/v1/products"
         );
         console.log(res);
         setProducts(res.data);

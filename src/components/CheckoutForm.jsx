@@ -40,7 +40,7 @@ const CheckoutForm = () => {
     if(!error) {
         try {
             const {id} = paymentMethod
-            const response = await axios.post("http://localhost:5000/api/v1/checkout/create-payment-intent", {
+            const response = await axios.post("https://mindfulness-portal.herokuapp.com/api/v1/checkout/create-payment-intent", {
                 amount: 1000,
                 currency: "usd",
                 id

@@ -89,7 +89,7 @@ const ForgetPassword = () => {
     const checkEmail = async () => {
       try {
         let response = await fetch(
-          "http://localhost:5000/api/v1/user/email",
+          "https://mindfulness-portal.herokuapp.com/api/v1/user/email",
           {
             method: "POST",
             headers: {

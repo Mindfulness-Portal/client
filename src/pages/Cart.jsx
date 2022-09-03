@@ -202,7 +202,7 @@ const Cart = () => {
   useEffect(() => {
     const makeRequest = async () => {
       try {
-        const res = await userRequest.post("http://localhost:5000/api/v1/checkout/payment", {
+        const res = await userRequest.post("https://mindfulness-portal.herokuapp.com/api/v1/checkout/payment", {
           tokenId: stripeToken.id,
           amount: 500,
           // amount: cart.total * 100,
@@ -252,7 +252,7 @@ const Cart = () => {
 
   // const updateCartDetails = async () => {
   //   try {
-  //     let response = await fetch(`http://localhost:5000/api/v1/carts/{productId}`, {
+  //     let response = await fetch(`https://mindfulness-portal.herokuapp.com/api/v1/carts/{productId}`, {
   //       method: "PUT",
   //       headers: {
   //         "Content-Type": "application/json",

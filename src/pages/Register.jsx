@@ -57,7 +57,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const URL = "http://localhost:5000/api/v1/auth/register";
+const URL = "https://mindfulness-portal.herokuapp.com/api/v1/auth/register";
 
 const Register = () => {
   const [formSaveData, setFormSaveData] = useState([]);

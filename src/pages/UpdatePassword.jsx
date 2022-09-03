@@ -88,7 +88,7 @@ const UpdatePassword = () => {
     if (password === confirmPassword) {
       try {
         let response = await fetch(
-          `http://localhost:5000/api/v1/user/${user._id}`,
+          `https://mindfulness-portal.herokuapp.com/api/v1/user/${user._id}`,
           {
             method: "PUT",
             headers: {
